@@ -2,6 +2,4 @@
 @import "./colors.css";
 @import "./utility.css";
 
-body {
-  background-color: hotpink;
-}
+@import "./components/app-grid.css";
