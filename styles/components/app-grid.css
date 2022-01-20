@@ -5,4 +5,5 @@
 
 .app-grid__scrollarea {
   overflow-y: auto;
+  text-align: center;
 }
