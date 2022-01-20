@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles/index.css">
-</head>
-<body>
-  <h1>Quiz-App</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App start page</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+
+  <body class="app-grid">
+      <h1 class="quiz-app-heading" id="#starthome">Quiz-App</h1>
+
+    <main class="app-grid__scrollarea">
+      <section class="quiz-app-card">
+        <button class="quiz-app-card__bookmark"></button>
+        <h2 class="quiz-app-card__heading">Question:</h2>
+        <article class="quiz-app-card-question-container">
+          <details class="quiz-app-card-question">
+            <summary>show answer</summary class="quiz-app-card-question-button">
+          </details>
+        </article>
+        
+        <div class="quiz-app-card-advise-tag__container">
+          <button class="quiz-app-card-advise-tag" type="button"></button>
+          <button class="quiz-app-card-advise-tag" type="button"></button>
+          <button class="quiz-app-card-advise-tag" type="button"></button>
+          <button class="quiz-app-card-advise-tag" type="button"></button>
+        </div>
+        
+      </section>
+    </main>
+
+    <nav class="nav-container">
+      <ul class="nav-container__list">
+        <li class="nav-container__listitem">
+          <a href="#starthome"
+            ><img
+              src=""
+              width=""
+              height=""
+              alt=""
+              class="nav-container__home-icon"
+          /></a>
+        </li>
+        <li class="nav-container__listitem">
+          <a href="#bookmarks"
+            ><img
+              src=""
+              width=""
+              height=""
+              alt=""
+              class="nav-container__bookmark bookmark--off"
+          /></a>
+        </li>
+        <li class="nav-container__listitem">
+          <a href="#create"
+            ><img
+              src=""
+              width=""
+              height=""
+              alt=""
+              class="nav-container__create-icon"
+          /></a>
+        </li>
+        <li class="nav-container__listitem">
+          <a href="#profile"
+            ><img
+              src=""
+              width=""
+              height=""
+              alt=""
+              class="nav-container__profile-icon"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+  </body>
 </html>
