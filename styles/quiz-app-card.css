@@ -1,0 +1,80 @@
+.quiz-app-card {
+  border: 1px solid black;
+  width: 95%;
+  height: 350px;
+  background-color: rgb(210, 233, 231);
+  position: relative;
+  margin: 0.5rem;
+  padding: 1rem;
+  align-self: center;
+  display: grid;
+  grid-template-rows: 10% 30% auto 20%;
+  grid-template-columns: 1fr;
+}
+
+.quiz-app-card__bookmark {
+  width: 36px;
+  height: 48px;
+  background-color: red;
+  position: absolute;
+  right: 8%;
+  top: -5%;
+  z-index: 3;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-app-card__heading {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.3rem;
+  background-color: rgb(29, 87, 84);
+  color: white;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.quiz-app-card-question-container {
+  background-color: silver;
+  grid-row: 2 / 4;
+  grid-column: 1 / 2;
+  padding: 0.8rem;
+}
+
+.quiz-app-card-question {
+  background-color: var(--creme);
+  text-align: justify;
+}
+
+.quiz-app-card-action {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-app-card-action--off {
+  list-style: none;
+  color: white;
+  width: fit-content;
+  min-height: 22px;
+  background-color: rgb(83, 102, 109);
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 10px auto;
+  border: 0.5px solid grey;
+}
+
+.quiz-app-card-advise-tag__container {
+  background-color: white;
+  grid-row-start: 3 / 4;
+  grid-column: 1 / 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.quiz-app-card-advise-tag {
+  background-color: rgb(29, 87, 84);
+  color: white;
+  padding: 0.5rem;
+}
