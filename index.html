@@ -7,29 +7,27 @@
     <title>Quiz-App start page</title>
     <link rel="stylesheet" href="styles/index.css" />
   </head>
-  <body class="app-grid">
-    <header id="#starthome" class="top">
-      <h1 class="top quiz-app-heading">Quiz-App</h1>
-    </header>
 
-    <main class="app-grid__scrollarea h-100vh">
+  <body class="app-grid">
+      <h1 class="quiz-app-heading" id="#starthome">Quiz-App</h1>
+
+    <main class="app-grid__scrollarea">
       <section class="quiz-app-card">
-        <article class="quiz-app-card-question">
-          <h2 class="quiz-app-card__heading">Question:</h2>
-          <p class="quiz-app-card-question--text"></p>
+        <button class="quiz-app-card__bookmark"></button>
+        <h2 class="quiz-app-card__heading">Question:</h2>
+        <article class="quiz-app-card-question-container">
+          <details class="quiz-app-card-question">
+            <summary>show answer</summary class="quiz-app-card-question-button">
+          </details>
         </article>
-        <figure class="bookmark-container">
-          <img src="" alt="" width="" height="" class="bookmark--on" />
-        </figure>
-        <button class="quiz-app-card-answer--show"></button>
-        <button class="quiz-app-card-answer--hide"></button>
-        <p class="quiz-app-card-question--answer"></p>
+        
         <div class="quiz-app-card-advise-tag__container">
-          <button class="quiz-app-card-advise-tag" type="text"></button>
-          <button class="quiz-app-card-advise-tag" type="text"></button>
-          <button class="quiz-app-card-advise-tag" type="text"></button>
-          <button class="quiz-app-card-advise-tag" type="text"></button>
+          <button class="quiz-app-card-advise-tag" type="button"></button>
+          <button class="quiz-app-card-advise-tag" type="button"></button>
+          <button class="quiz-app-card-advise-tag" type="button"></button>
+          <button class="quiz-app-card-advise-tag" type="button"></button>
         </div>
+        
       </section>
     </main>
 
