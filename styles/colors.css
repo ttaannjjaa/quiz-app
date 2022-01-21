@@ -1,0 +1,11 @@
+:root {
+  --darkpetrol: rgb(29, 87, 84);
+  --silver: silver;
+  --lightpetrol: rgb(210, 233, 231);
+  --black: black;
+  --white: white;
+  --red: red;
+  --creme: var(--creme);
+  --petrolgrey: rgb(83, 102, 109);
+  --grey: grey;
+}
