@@ -4,15 +4,11 @@
   padding: 0;
 }
 
-.app-grid {
-  display: grid;
-  grid-template-rows: 48px 1fr 48px;
-}
-
 .nav-container {
   background-color: var(--white);
   border: 2px solid var(--darkpetrol);
   grid-row: 3 / 4;
+  height: 48px;
 }
 
 .nav-container__list {
@@ -20,11 +16,13 @@
   grid-template-rows: 1;
   grid-template-columns: 25% 25% 25% 25%;
   place-items: center;
+  height: 46px;
 }
 
 .nav-container__item {
   list-style: none;
   display: inline;
+  margin-bottom: 2px;
 }
 
 .item1 {

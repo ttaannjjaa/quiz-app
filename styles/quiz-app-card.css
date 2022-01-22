@@ -1,7 +1,7 @@
 .quiz-app-card {
   border: 1px solid var(--black);
   width: 95%;
-  height: 350px;
+  height: 340px;
   background-color: var(--lightpetrol);
   position: relative;
   margin: 0.5rem;
@@ -18,12 +18,16 @@
   background-color: var(--red);
   position: absolute;
   right: 8%;
-  top: -5%;
+  top: -2%;
   z-index: 3;
   border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.quiz-app-card__bookmark--notchoosen {
+  background-color: var(--white);
 }
 
 .quiz-app-card__heading {
