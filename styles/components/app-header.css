@@ -9,4 +9,8 @@
   color: var(--darkpetrol);
   box-shadow: 0 0 5px 5px var(--grey);
   text-shadow: 1px 1px var(--black);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }

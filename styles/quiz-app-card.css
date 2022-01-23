@@ -15,7 +15,6 @@
 .quiz-app-card__bookmark {
   width: 36px;
   height: 48px;
-  background-color: var(--red);
   position: absolute;
   right: 8%;
   top: -2%;
@@ -24,10 +23,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.quiz-app-card__bookmark--notchoosen {
-  background-color: var(--white);
 }
 
 .quiz-app-card__heading {

@@ -9,71 +9,209 @@
   </head>
 
   <body class="app-grid">
-      <h1 class="quiz-app-heading">Quiz-App</h1>
+    <h1
+      class="quiz-app-heading"
+      aria-describedby="Starting Page of the Quiz App showing first quiz-cards"
+    >
+      Quiz-App
+    </h1>
 
     <main class="app-grid__scrollarea">
+      <!--input component quiz-app-card-->
+      <!--first visible card-->
       <section class="quiz-app-card">
-        <button class="quiz-app-card__bookmark"></button>
+        <button
+          class="
+            quiz-app-card__bookmark
+            shadow
+            quiz-app-card__bookmark--activated
+          "
+        >
+          <img
+            src="../images/icons8-bookmark.svg"
+            alt="bookmark icon"
+            width="30"
+            height="30"
+          />
+        </button>
         <h2 class="quiz-app-card__heading">Question:</h2>
         <article class="quiz-app-card-question-container">
-          <details class="quiz-app-card-question">
-            <summary>show answer</summary class="quiz-app-card-question-button">
+          <p class="quiz-app-card-question">
+            Warum ist Positionieren so schwierig? Lorem ipsum dolor sit amet
+            consectetur?
+          </p>
+          <details class="quiz-app-card-action">
+            <summary class="quiz-app-card-action--off shadow--bottom">
+              show answer
+            </summary>
+            there is no answer, but adipisicing elit. In tenetur necessitatibus
+            pariatur rerum, sequi quidem aut sunt unde facilis voluptatem natus
+            doloribus animi accusamus esse sint quo minus illum. Deserunt.
           </details>
         </article>
-        
-        <div class="quiz-app-card-advise-tag__container">
-          <button class="quiz-app-card-advise-tag" type="button"></button>
-          <button class="quiz-app-card-advise-tag" type="button"></button>
-          <button class="quiz-app-card-advise-tag" type="button"></button>
-          <button class="quiz-app-card-advise-tag" type="button"></button>
-        </div>
-        
-      </section>
-    </main>
 
+        <div class="quiz-app-card-advise-tag__container">
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 1
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 2
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 3
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 4
+          </button>
+        </div>
+      </section>
+
+      <!--second visible card - bookmark not hifglighted-->
+      <section class="quiz-app-card">
+        <button
+          class="
+            quiz-app-card__bookmark quiz-app-card__bookmark--not-activated
+            shadow
+          "
+        >
+          <img
+            src="../images/icons8-bookmark.svg"
+            alt="bookmark icon"
+            width="30"
+            height="30"
+          />
+        </button>
+        <h2 class="quiz-app-card__heading">Question:</h2>
+        <article class="quiz-app-card-question-container">
+          <p class="quiz-app-card-question">
+            Warum ist Positionieren so schwierig? Lorem ipsum dolor sit amet
+            consectetur?
+          </p>
+          <details class="quiz-app-card-action">
+            <summary class="quiz-app-card-action--off shadow--bottom">
+              show answer
+            </summary>
+            there is no answer, but adipisicing elit. In tenetur necessitatibus
+            pariatur rerum, sequi quidem aut sunt unde facilis voluptatem natus
+            doloribus animi accusamus esse sint quo minus illum. Deserunt.
+          </details>
+        </article>
+
+        <div class="quiz-app-card-advise-tag__container">
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 1
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 2
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 3
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 4
+          </button>
+        </div>
+      </section>
+
+      <!--the third quiz-app card -->
+
+      <section class="quiz-app-card">
+        <button
+          class="
+            quiz-app-card__bookmark
+            shadow
+            quiz-app-card__bookmark--activated
+          "
+        >
+          <img
+            src="../images/icons8-bookmark.svg"
+            alt="bookmark icon"
+            width="30"
+            height="30"
+          />
+        </button>
+        <h2 class="quiz-app-card__heading">Question:</h2>
+        <article class="quiz-app-card-question-container">
+          <p class="quiz-app-card-question">
+            Warum ist Positionieren so schwierig? Lorem ipsum dolor sit amet
+            consectetur?
+          </p>
+          <details class="quiz-app-card-action">
+            <summary class="quiz-app-card-action--off shadow--bottom">
+              show answer
+            </summary>
+            there is no answer, but adipisicing elit. In tenetur necessitatibus
+            pariatur rerum, sequi quidem aut sunt unde facilis voluptatem natus
+            doloribus animi accusamus esse sint quo minus illum. Deserunt.
+          </details>
+        </article>
+
+        <div class="quiz-app-card-advise-tag__container">
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 1
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 2
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 3
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 4
+          </button>
+        </div>
+      </section>
+      <!--end of component input-->
+    </main>
+    <!--input component app-nav-->
     <nav class="nav-container">
       <ul class="nav-container__list">
-        <li class="nav-container__listitem">
-          <a href="#starthome"
+        <li
+          class="nav-container__item nav-container__item--aktiv item1"
+          role="list"
+        >
+          <a href="index.html"
             ><img
-              src=""
-              width=""
-              height=""
-              alt=""
+              src="../../images/icons8-home.svg"
+              width="36"
+              height="36"
+              alt="Go to starting page"
               class="nav-container__home-icon"
           /></a>
         </li>
-        <li class="nav-container__listitem">
-          <a href="#bookmarks"
+        <li class="nav-container__item item2">
+          <a href="bookmarks.html"
             ><img
-              src=""
-              width=""
-              height=""
-              alt=""
+              src="../../images/icons8-bookmark.svg"
+              width="36"
+              height="36"
+              alt="Go to page Bookmarks"
               class="nav-container__bookmark bookmark--off"
           /></a>
         </li>
-        <li class="nav-container__listitem">
-          <a href="#create"
+        <li class="nav-container__item">
+          <a href="create.html"
             ><img
-              src=""
-              width=""
-              height=""
-              alt=""
+              src="../../images/icons8-idea.svg"
+              width="36"
+              height="36"
+              alt="Go to page Create Cards"
               class="nav-container__create-icon"
           /></a>
         </li>
-        <li class="nav-container__listitem">
-          <a href="#profile"
+
+        <li class="nav-container__item item4">
+          <a href="profil.html"
             ><img
-              src=""
-              width=""
-              height=""
-              alt=""
+              src="../../images/icons8-for-you.svg"
+              width="36"
+              height="36"
+              alt="Go to profile page"
               class="nav-container__profile-icon"
           /></a>
         </li>
       </ul>
     </nav>
+    <!--end of component input-->
   </body>
 </html>
