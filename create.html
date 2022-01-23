@@ -9,8 +9,54 @@
   </head>
 
   <body class="app-grid">
-    <h1 class="quiz-app-heading">Create</h1>
+    <h1
+      class="quiz-app-heading"
+      aria-describedby="app-page with a form with input fields to create new quiz-app-cards"
+    >
+      Create
+    </h1>
+    <main class="app-grid__scrollarea">
+      <form class="createpage__form" action="">
+        <label for="createpage__inputfield--newquestion"
+          >Add a new question</label
+        >
+        <textarea
+          id="createpage__inputfield--newquestion"
+          name="createpage__input--newquestion"
+          class="createpage__textarea1"
+          cols="50"
+          rows="2"
+          placeholder="Please write your new quiz-question here"
+          autofocus="on"
+          autocomplete="off"
+          required
+        ></textarea>
 
-    <main class="app-grid__scrollarea"></main>
+        <label for="createpage__inputfield--newquestion__answer"
+          >Add answer</label
+        >
+        <textarea
+          id="createpage__inputfield--newquestion__answer"
+          name="createpage__input--newquestion-answer"
+          class="createpage__textarea2"
+          cols="50"
+          rows="6"
+          placeholder="Please write the answer according to your new quiz-question"
+          autocomplete="off"
+          required
+        ></textarea>
+      </form>
+
+      <label for="createpage__inputfield--newquestion__tags"
+        >Add tags, divided by comma</label
+      >
+      <button
+        class="quiz-app__button--submit"
+        type="submit"
+        aria-label="submit-button to confirm your new quiz-question"
+      >
+        Submit
+      </button>
+    </main>
   </body>
 </html>
