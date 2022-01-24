@@ -28,12 +28,31 @@
   background-color: hotpink;
 }
 
+.quiz-app-card__bookmark--activated {
+  background-color: var(--red);
+}
+
+.quiz-app-card__bookmark--not-activated {
+  background-color: var(--white);
+}
+
 .shadow {
   box-shadow: inset 0 -0.5em 0 -0.4em rgba(0, 0, 0, 0.2);
 }
 
 .shadow--bottom {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.button--submit-function {
+  background-color: var(--petrolgrey);
+  color: var(--white);
+}
+
+.nav-container {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 .wrapper {
