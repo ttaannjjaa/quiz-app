@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App start page</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <script defer src="/scripts/main.js"></script>
   </head>
 
   <body class="app-grid">
@@ -21,6 +22,7 @@
       <!--first visible card-->
       <section class="quiz-app-card">
         <button
+          data-js="bookmark-toggle"
           class="
             quiz-app-card__bookmark
             shadow
@@ -41,7 +43,10 @@
             consectetur?
           </p>
           <details class="quiz-app-card-action">
-            <summary class="quiz-app-card-action--off shadow--bottom">
+            <summary
+              class="quiz-app-card-action--off shadow--bottom"
+              data-js="showanswer-button"
+            >
               show answer
             </summary>
             there is no answer, but adipisicing elit. In tenetur necessitatibus
@@ -201,7 +206,7 @@
         </li>
 
         <li class="nav-container__item item4">
-          <a href="profil.html"
+          <a href="profile.html"
             ><img
               src="../../images/icons8-for-you.svg"
               width="36"

@@ -18,53 +18,51 @@
 
     <main class="createpage__main">
       <form class="createpage__form" action="">
-        <div class="createpage__inputfield-wrapper field1">
-          <label
-            for="createpage__inputfield--newquestion"
-            class="label-textarea1"
-            >Add a new question</label
-          >
-          <textarea
-            id="createpage__inputfield--newquestion"
-            name="createpage__input--newquestion"
-            class="createpage__textarea1"
-            cols="50"
-            rows="2"
-            placeholder="Please write your new quiz-question here"
-            autofocus="on"
-            autocomplete="off"
-            required
-          ></textarea>
-        </div>
+        <label
+          for="createpage__inputfield--newquestion"
+          class="label__textarea1"
+          >Add a new question</label
+        >
+        <textarea
+          id="createpage__inputfield--newquestion"
+          name="createpage__input--newquestion"
+          class="createpage__textarea1"
+          cols="50"
+          rows="2"
+          placeholder="Please write your new quiz-question here"
+          autofocus="on"
+          autocomplete="off"
+          required
+        ></textarea>
 
-        <div class="createpage__inputfield-wrapper field2">
-          <label
-            for="createpage__inputfield--newquestion__answer"
-            class="label-textarea2"
-            >Add answer</label
-          >
-          <textarea
-            id="createpage__inputfield--newquestion__answer"
-            name="createpage__input--newquestion-answer"
-            class="createpage__textarea2"
-            cols="50"
-            rows="6"
-            placeholder="Please write the answer according to your new quiz-question"
-            autocomplete="off"
-            required
-          ></textarea>
-        </div>
-        <div class="createpage__inputfield-wrapper field3">
-          <label for="createpage__inputfield--newquestion__tags"
-            >Add tags, divided by comma</label
-          >
-          <input
-            type="text"
-            id="createpage__inputfield--newquestion__tags"
-            autocomplete="off"
-            required
-          />
-        </div>
+        <label
+          for="createpage__inputfield--newquestion__answer"
+          class="label__textarea2"
+          >Add answer</label
+        >
+        <textarea
+          id="createpage__inputfield--newquestion__answer"
+          name="createpage__input--newquestion-answer"
+          class="createpage__textarea2"
+          cols="50"
+          rows="6"
+          placeholder="Please write the answer according to your new quiz-question"
+          autocomplete="off"
+          required
+        ></textarea>
+
+        <label
+          for="createpage__inputfield--newquestion__tags"
+          class="label__input1"
+          >Add tags, divided by comma</label
+        >
+        <input
+          type="text"
+          id="createpage__inputfield--newquestion__tags"
+          autocomplete="off"
+          required
+          class="createpage__input1"
+        />
 
         <button
           class="quiz-app__button--submit shadow--bottom"
@@ -110,7 +108,7 @@
         </li>
 
         <li class="nav-container__item item4">
-          <a href="profil.html"
+          <a href="profile.html"
             ><img
               src="../../images/icons8-for-you.svg"
               width="36"

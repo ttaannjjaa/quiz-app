@@ -9,6 +9,7 @@
   border: 2px solid var(--darkpetrol);
   grid-row: 3 / 4;
   height: 48px;
+  z-index: 10;
 }
 
 .nav-container__list {
@@ -22,7 +23,7 @@
 .nav-container__item {
   list-style: none;
   display: inline;
-  margin-bottom: 2px;
+  /*margin-bottom: 2px;*/
 }
 
 .item1 {

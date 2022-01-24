@@ -10,6 +10,7 @@
   display: grid;
   grid-template-rows: 10% 30% auto 20%;
   grid-template-columns: 1fr;
+  border-radius: 5px;
 }
 
 .quiz-app-card__bookmark {
@@ -56,12 +57,14 @@
   list-style: none;
   color: white;
   width: fit-content;
+  height: fit-content;
   min-height: 22px;
   background-color: var(petrolgrey);
   border-radius: 5px;
   padding: 5px 15px;
   margin: 10px auto;
   border: 0.5px solid var(--grey);
+  overflow: hidden;
 }
 
 .quiz-app-card-advise-tag__container {
