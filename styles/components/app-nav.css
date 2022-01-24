@@ -6,10 +6,14 @@
 
 .nav-container {
   background-color: var(--white);
-  border: 2px solid var(--darkpetrol);
+  border-left: 2px solid var(--darkpetrol);
+  border-right: 2px solid var(--darkpetrol);
+  border-bottom: 2px solid var(--darkpetrol);
+  border-top: 4px solid var(--darkpetrol);
   grid-row: 3 / 4;
   height: 48px;
   z-index: 10;
+  margin-bottom: 2px;
 }
 
 .nav-container__list {
@@ -43,9 +47,10 @@
 }
 
 .nav-container__item--aktiv {
-  background-color: var(--lightpetrol);
+  background: var(--darkpetrol);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }

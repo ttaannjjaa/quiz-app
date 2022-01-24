@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.profile__main {
+  padding: 2rem;
+  background-color: var(--lightpetrol);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__wrapper__person {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.profile__pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  border: 0.5rem solid var(--darkpetrol);
+  margin: 1rem 1rem 1rem 0;
+}
+
+.profile__label__username {
+  padding: 2rem 0;
+}
+
+.profile__titleskills {
+  font-size: 1.4rem;
+  padding: 1rem 1rem 0 0;
+  margin: 2rem 2rem 0 2rem;
+}
+
+.profile-wrapper__skills,
+.profile__aboutyourself {
+  margin: 0.5rem 2rem;
+}
+
+.profile-wrapper__skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile__skill--empty {
+  padding: 0.2rem;
+  border: 1px solid var(--darkpetrol);
+  border-radius: 20px;
+  margin: 0 1rem 1rem 0;
+}
+
+.profile__button--logout {
+  width: 40%;
+  height: 40px;
+  background-color: var(--petrolgrey);
+  color: var(--white);
+  margin: 20px auto;
+  border-radius: 8px;
+}

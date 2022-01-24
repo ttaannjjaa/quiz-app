@@ -11,27 +11,87 @@
   <body class="app-grid">
     <h1 class="quiz-app-heading">Profile</h1>
 
-    <main>
-      <figure>
-        <img class="profile__pic" src="" alt="profile picture of user" />
-      </figure>
+    <main class="profile__main">
+      <div class="profile__wrapper__person">
+        <figure>
+          <img class="profile__pic" src="https://images.unsplash.com/photo-1536782376847-5c9d14d97cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="profile picture of user" width="70" height="70"/>
+        </figure>
+      
+      <form action="" class="profile__username__field">
+<label for="profile_username" class="profile__label__username">Username</label>
+<input id="profile_username" class="profile__input__username"></input>
+      </form>
+    </div>
 
-      <p class="profile__username"></p>
+      <p class="profile__aboutyourself">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Nobis maiores alias cupiditate architecto iste exercitationem minus deleniti omnis odio!
+         Recusandae reprehenderit debitis libero corporis 
+         quisquam iusto asperiores eius dolorem quas.</p>
 
-      <p class="profile__aboutyourself"></p>
-
-      <div class="profile-wrapper__skillös">
-        <h2 class="profile__titleskills">Tags about skills</h2>
-        <span class="profile__skill--empty">tertert</span
-        ><span>blabablblaba</span><span>hohohoho</span
-        ><span>sdlgjsldkjgssdgjslf</span><span>lol</span
-        ><span>hopedyinglast</span>
+         <h2 class="profile__titleskills">Tags about skills</h2>
+     
+         <div class="profile-wrapper__skills">  
+        <span class="profile__skill--empty">tertert</span>
+        <span class="profile__skill--empty">mmmmmh</span>
+        <span class="profile__skill--empty">blabablblaba</span>
+        <span class="profile__skill--empty">njnj,n,jn</span>
+        <span class="profile__skill--empty">hohohoho</span>
+        <span class="profile__skill--empty">sdlgjsldkjgssdgjslf</span>
+        <span class="profile__skill--empty">lol</span>
+        <span class="profile__skill--empty">hopedyinglast</span>
       </div>
 
-      <button class="profile__button--logout"></button>
+      <button class="profile__button--logout">LOGOUT</button>
     </main>
   </body>
   <!--input component nav-bar-->
+  <nav class="nav-container">
+    <ul class="nav-container__list">
+      <li
+        class="nav-container__item item1"
+        role="list"
+      >
+        <a href="index.html"
+          ><img
+            src="../../images/icons8-home.svg"
+            width="36"
+            height="36"
+            alt="Go to starting page"
+            class="nav-container__home-icon"
+        /></a>
+      </li>
+      <li class="nav-container__item item2">
+        <a href="bookmarks.html"
+          ><img
+            src="../../images/icons8-bookmark.svg"
+            width="36"
+            height="36"
+            alt="Go to page Bookmarks"
+            class="nav-container__bookmark bookmark--off"
+        /></a>
+      </li>
+      <li class="nav-container__item">
+        <a href="create.html"
+          ><img
+            src="../../images/icons8-idea.svg"
+            width="36"
+            height="36"
+            alt="Go to page Create Cards"
+            class="nav-container__create-icon"
+        /></a>
+      </li>
 
+      <li class="nav-container__item nav-container__item--aktiv item4">
+        <a href="profile.html"
+          ><img
+            src="../../images/icons8-for-you.svg"
+            width="36"
+            height="36"
+            alt="Go to profile page"
+            class="nav-container__profile-icon"
+        /></a>
+      </li>
+    </ul>
+  </nav>
   <!--end input-->
 </html>
