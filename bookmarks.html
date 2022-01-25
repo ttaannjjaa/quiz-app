@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App Page Bookmarks</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <script defer src="/scripts/main.js"></script>
   </head>
 
   <body class="app-grid">
@@ -15,7 +16,10 @@
       <!--quiz-app-card 1-->
 
       <section class="quiz-app-card">
-        <button class="quiz-app-card__bookmark shadow">
+        <button
+          data-js="bookmark-toggle"
+          class="quiz-app-card__bookmark shadow"
+        >
           <img
             src="../images/icons8-bookmark.svg"
             alt="bookmark icon"
@@ -58,7 +62,10 @@
       <!--quiz-app-card 2-->
 
       <section class="quiz-app-card">
-        <button class="quiz-app-card__bookmark shadow">
+        <button
+          data-js="bookmark-toggle"
+          class="quiz-app-card__bookmark shadow"
+        >
           <img
             src="../images/icons8-bookmark.svg"
             alt="bookmark icon"
