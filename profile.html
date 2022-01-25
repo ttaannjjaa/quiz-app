@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App Profile Page</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <script defer src="/scripts/main.js"></script>
   </head>
 
   <body class="app-grid">
@@ -13,13 +14,13 @@
 
     <main class="profile__main">
       <div class="profile__wrapper__person">
-        <figure>
+        <figure class="profile__figure">
           <img class="profile__pic" src="https://images.unsplash.com/photo-1536782376847-5c9d14d97cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="profile picture of user" width="70" height="70"/>
         </figure>
       
       <form action="" class="profile__username__field">
 <label for="profile_username" class="profile__label__username">Username</label>
-<input id="profile_username" class="profile__input__username"></input>
+<input id="profile_username" class="profile__input__username js-input-username"></input>
       </form>
     </div>
 
@@ -41,7 +42,8 @@
         <span class="profile__skill--empty">hopedyinglast</span>
       </div>
 
-      <button class="profile__button--logout">LOGOUT</button>
+      <button data-js="loginbutton" class="profile__button--logout">LOGIN</button>
+      <button data-js="logoutbutton" class="profile__button--logout">LOGOUT</button>
     </main>
   </body>
   <!--input component nav-bar-->

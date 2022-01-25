@@ -3,20 +3,32 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*
+html {
+  height: 100%;
+}
 
+body {
+  height: 100%;
+}
+*/
 .profile__main {
-  padding: 2rem;
-  background-color: var(--lightpetrol);
+  width: 100%;
   height: 100vh;
+  padding: 0 1.5rem;
+  background-color: var(--lightpetrol);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .profile__wrapper__person {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  max-height: 250px;
+  flex-basis: 90%;
+  flex-shrink: 2;
   align-items: center;
-  padding: 1.5rem;
 }
 
 .profile__pic {
@@ -27,19 +39,49 @@
   margin: 1rem 1rem 1rem 0;
 }
 
+.profile__figure {
+  flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__username__field {
+  flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .profile__label__username {
-  padding: 2rem 0;
+  padding: 0.5rem 0;
+}
+
+.profile__input__username {
+  font-family: fantasy; /*utility.css*/
+  flex-shrink: 2;
 }
 
 .profile__titleskills {
-  font-size: 1.4rem;
-  padding: 1rem 1rem 0 0;
-  margin: 2rem 2rem 0 2rem;
+  font-size: 1.2rem;
+  padding: 0rem 1rem 0.5rem 0;
 }
 
-.profile-wrapper__skills,
+.profile-wrapper__skills {
+  margin: 1.5rem 0 1rem 0;
+}
+
 .profile__aboutyourself {
-  margin: 0.5rem 2rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .profile-wrapper__skills {
@@ -47,13 +89,15 @@
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 85%;
 }
 
 .profile__skill--empty {
   padding: 0.2rem;
   border: 1px solid var(--darkpetrol);
   border-radius: 20px;
-  margin: 0 1rem 1rem 0;
+  margin: 0 0.5rem 0.5rem 0;
 }
 
 .profile__button--logout {
@@ -61,6 +105,12 @@
   height: 40px;
   background-color: var(--petrolgrey);
   color: var(--white);
-  margin: 20px auto;
+  margin: 1.5rem auto 0;
   border-radius: 8px;
+}
+
+.profile__button--loggedout {
+  border: 1px solid var(--petrolgrey);
+  color: black;
+  background-color: var(--silver);
 }

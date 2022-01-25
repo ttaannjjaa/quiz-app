@@ -8,7 +8,6 @@
   background-color: var(--white);
   border-left: 2px solid var(--darkpetrol);
   border-right: 2px solid var(--darkpetrol);
-  border-bottom: 2px solid var(--darkpetrol);
   border-top: 4px solid var(--darkpetrol);
   grid-row: 3 / 4;
   height: 48px;
@@ -26,8 +25,13 @@
 
 .nav-container__item {
   list-style: none;
-  display: inline;
-  /*margin-bottom: 2px;*/
+  display: inline-block;
+  border-right: 1px solid var(--darkpetrol);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .item1 {
@@ -48,9 +52,4 @@
 
 .nav-container__item--aktiv {
   background: var(--darkpetrol);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
 }
