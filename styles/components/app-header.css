@@ -4,7 +4,7 @@
   border: 2px solid var(--darkpetrol);
   padding: 2px;
   text-align: center;
-  font-weight: 900 !important;
+  font-weight: bolder !important;
   letter-spacing: 0.5rem;
   color: var(--darkpetrol);
   box-shadow: 0 0 5px 5px var(--grey);
