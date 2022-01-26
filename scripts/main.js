@@ -2,15 +2,21 @@
 
 const logoutbtn = document.querySelector('[data-js="logoutbutton"]');
 const inputusername = document.querySelector('.js-input-username');
+const loginbtn = document.querySelector('[data-js="loginbutton"]');
 
 logoutbtn.addEventListener('click', () => {
   const bye = 'Ciao, user! Log in again!';
-  const hello = 'Hello, user! Nice to see you';
   inputusername.value = bye;
-  logoutbtn.classList.toggle('profile__button--loggedout');
+  logoutbtn.classList.add('profile__button--loggedout');
 });
 
-//bookmark// // nur der erste auf der Seite funktioniert //
+loginbtn.addEventListener('click', () => {
+  const hello = 'Hello, user! Nice to see you.';
+  inputusername.value = hello;
+  logoutbtn.classList.remove('profile__button--loggedout');
+});
+
+//bookmark//
 
 const cardBookmark = document.querySelector('[data-js="bookmark-toggle"]');
 
