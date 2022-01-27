@@ -1,4 +1,4 @@
-.quiz-app-card {
+.app-card {
   border: 1px solid var(--black);
   width: 95%;
   height: 340px;
@@ -13,7 +13,7 @@
   border-radius: 5px;
 }
 
-.quiz-app-card__bookmark {
+.app-card__bookmark {
   width: 36px;
   height: 48px;
   position: absolute;
@@ -26,7 +26,7 @@
   align-items: center;
 }
 
-.quiz-app-card__heading {
+.app-card__heading {
   font-size: 1rem;
   margin: 0;
   padding: 0.3rem;
@@ -36,24 +36,24 @@
   grid-column: 1 / 2;
 }
 
-.quiz-app-card-question-container {
+.app-card-question-container {
   background-color: var(--silver);
   grid-row: 2 / 4;
   grid-column: 1 / 2;
   padding: 0.8rem;
 }
 
-.quiz-app-card-question {
+.app-card-question {
   background-color: var(--creme);
   text-align: justify;
 }
 
-.quiz-app-card-action {
+.app-card-action {
   display: flex;
   justify-content: center;
 }
 
-.quiz-app-card-action--off {
+.app-card-action--off {
   list-style: none;
   color: white;
   width: fit-content;
