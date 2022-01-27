@@ -52,19 +52,29 @@
   display: flex;
   justify-content: center;
 }
+/*
+.app-card-action--on {
+  display: flex;
+  justify-content: center;
+}
+check, ob notwending*/
 
 .app-card-action--off {
   list-style: none;
-  color: white;
   width: fit-content;
   height: fit-content;
   min-height: 22px;
-  background-color: var(petrolgrey);
+  background-color: var(--white);
   border-radius: 5px;
   padding: 5px 15px;
   margin: 10px auto;
   border: 0.5px solid var(--grey);
   overflow: hidden;
+}
+
+.app-card-action--on {
+  background-color: var(--darkpetrol);
+  color: var(--white);
 }
 
 .quiz-app-card-advise-tag__container {

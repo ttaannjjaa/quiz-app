@@ -10,3 +10,25 @@ main,
 nav {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* waits for putting to the pages and use in js-file*/
+.quiz-app-page--invisible {
+  display: none;
+}
+
+.quiz-app-heading {
+  font-family: fantasy;
+  background-color: silver;
+  border: 2px solid var(--darkpetrol);
+  padding: 2px;
+  text-align: center;
+  font-weight: bolder !important;
+  letter-spacing: 0.5rem;
+  color: var(--darkpetrol);
+  box-shadow: 0 0 5px 5px var(--grey);
+  text-shadow: 1px 1px var(--black);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
