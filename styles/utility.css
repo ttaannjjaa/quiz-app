@@ -28,11 +28,11 @@
   background-color: hotpink;
 }
 
-.quiz-app-card__bookmark--activated {
+.app-card__bookmark--activated {
   background-color: var(--red);
 }
 
-.quiz-app-card__bookmark--not-activated {
+.app-card__bookmark--not-activated {
   background-color: var(--white);
 }
 
