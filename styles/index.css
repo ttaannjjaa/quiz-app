@@ -1,12 +1,12 @@
-@import "./colors.css";
-@import "./base.css";
+@import './colors.css';
+@import './base.css';
 
-@import "./quiz-app-card.css";
+@import './quiz-app-card.css';
 
-@import "./components/app-header.css";
-@import "./components/app-grid.css";
-@import "./components/app-nav.css";
-@import "/create.css";
-@import "/profile.css";
+@import './components/app-header.css';
+@import './components/app-grid.css';
+@import './components/app-nav.css';
+@import '/create.css';
+@import '/profile.css';
 
-@import "./utility.css";
+@import './utility.css';
