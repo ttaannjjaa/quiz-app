@@ -31,10 +31,10 @@
 .app-card__bookmark--activated {
   background-color: var(--red);
 }
-
+/* wahrscheinlich nicht erforderlich
 .app-card__bookmark--not-activated {
   background-color: var(--white);
-}
+} */
 
 .shadow {
   box-shadow: inset 0 -0.5em 0 -0.4em rgba(0, 0, 0, 0.2);

@@ -69,12 +69,12 @@ const textShow = 'show answer';
 //     showAnswerButton.textContent === textShow ? textHide : textShow;
 // });
 
-summaryButton.addEventListener('click', () => {
-  if (summaryButton.textContent.trim() === textShow) {
-    summaryButton.textContent = textHide;
-    summaryButton.classList.add('app-card-action--on');
-  } else {
-    summaryButton.classList.remove('app-card-action--on');
-    summaryButton.textContent = 'show answer';
-  }
-});
+// summaryButton.addEventListener('click', () => {
+//   if (summaryButton.textContent.trim() === textShow) {
+//     summaryButton.textContent = textHide;
+//     summaryButton.classList.add('app-card-action--on');
+//   } else {
+//     summaryButton.classList.remove('app-card-action--on');
+//     summaryButton.textContent = 'show answer';
+//   }
+// });
