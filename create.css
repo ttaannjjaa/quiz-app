@@ -13,11 +13,33 @@
   padding: 1.5rem;
   border: 1px dotted var(--darkpetrol);
   border-radius: 10px;
+  position: relative;
 }
 .label__textarea1,
 .label__textarea2,
 .label__input1 {
   padding: 1rem 0 0.5rem 0;
+}
+
+.create_output {
+  border: 0.5px solid var(--petrolgrey);
+  width: 40px;
+  height: 20px;
+  text-align: right;
+  font-size: 0.9rem;
+  padding: 2px;
+}
+
+.create_output1 {
+  position: absolute;
+  left: 390px;
+  top: 40px;
+}
+
+.create_output2 {
+  position: absolute;
+  left: 390px;
+  top: 177px;
 }
 
 textarea {

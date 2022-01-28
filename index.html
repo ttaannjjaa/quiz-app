@@ -166,7 +166,7 @@
     <!--end of starting page-->
 
     <!--start of bookmarks page-->
-    <div data-js="bookmarkspage-top">
+    <div class="app-page--invisible" data-js="bookmarkspage-top">
       <h1
         class="app-heading"
         aria-describedby="Page bookmarks of the Quiz App showing quiz-cards"
@@ -265,7 +265,7 @@
     </div>
     <!--end of bookmarks page-->
     <!--start of create page-->
-    <div data-js="createpage-top">
+    <div class="app-page--invisible" data-js="createpage-top">
       <h1
         class="app-heading"
         aria-describedby="app-page with a form with input fields to create new quiz-app-cards"
@@ -285,13 +285,16 @@
             name="createpage__input--newquestion"
             class="createpage__textarea1"
             cols="50"
-            rows="2"
+            rows="3"
             placeholder="Please write your new quiz-question here"
             autofocus="on"
             autocomplete="off"
             maxlength="100"
             required
           ></textarea>
+          <output class="create_output create_output1" data-js="output-counter1"
+            >0</output
+          >
 
           <label
             for="createpage__inputfield--newquestion__answer"
@@ -309,6 +312,9 @@
             maxlength="300"
             required
           ></textarea>
+          <output class="create_output create_output2" data-js="output-counter2"
+            >0</output
+          >
 
           <label
             for="createpage__inputfield--newquestion__tags"
@@ -335,7 +341,7 @@
     </div>
     <!--end of create page-->
     <!--start of profile page-->
-    <div data-js="profilepage-top">
+    <div class="app-page--invisible" data-js="profilepage-top">
       <h1 class="app-heading">Profile</h1>
 
       <main class="profile__main">
@@ -350,14 +356,20 @@
             />
           </figure>
 
-          <form action="" class="profile__username__field">
+          <form
+            action=""
+            id="profile__username"
+            class="profile__username__field"
+          >
             <label for="profile_username" class="profile__label__username"
               >Username</label
             >
-            <input
-              id="profile_username"
-              class="profile__input__username js-input-username"
-            />
+            <output
+              form="profile_username"
+              class="profile__output__username js-input-username"
+              name="username"
+              >somebody</output
+            >
           </form>
         </div>
 
