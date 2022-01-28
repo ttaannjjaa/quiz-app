@@ -12,11 +12,11 @@ nav {
 }
 
 /* waits for putting to the pages and use in js-file*/
-.quiz-app-page--invisible {
+.app-page--invisible {
   display: none;
 }
 
-.quiz-app-heading {
+.app-heading {
   font-family: fantasy;
   background-color: silver;
   border: 2px solid var(--darkpetrol);

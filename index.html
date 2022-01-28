@@ -6,48 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App start page</title>
     <link rel="stylesheet" href="styles/index.css" />
-    <script defer src="/scripts/main.js"></script>
+    <script defer type="module" src="/index.js"></script>
   </head>
-
-  <!-- JerrysCode for starting 
-
-<!DOCTYPE html>
-<div class="app-grid h-500">
-  <header class="bg-hotpink">top</header>
-  <main class="app-grid__scrollarea bg-blue">
-    <div class="h-100vh">scroll me</div>
-  </main>
-  <nav class="bg-coral">bottom</nav>
-</div>
-
-.app-grid {
-  display: grid;
-  grid-template-rows: 48px 1fr 48px;
-}
-
-.app-grid__scrollarea {
-  overflow-y: auto;
-}
-
--->
 
   <body class="app-grid">
     <div class="app-starting-page" data-js="startingpage-top">
       <h1
-        class="quiz-app-heading"
+        class="app-heading"
         aria-describedby="Starting Page of the Quiz App showing first quiz-cards"
       >
         Quiz-App
       </h1>
-
       <main class="app-grid__scrollarea">
         <!--input component quiz-app-card-->
         <!--first visible card-->
         <section class="app-card">
-          <button
-            data-js="bookmark-toggle"
-            class="app-card__bookmark shadow app-card__bookmark--activated"
-          >
+          <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
             <img
               src="../images/icons8-bookmark.svg"
               alt="bookmark icon"
@@ -142,10 +116,7 @@
         <!--the third quiz-app card -->
 
         <section class="app-card">
-          <button
-            data-js="bookmark-toggle"
-            class="app-card__bookmark shadow app-card__bookmark--activated"
-          >
+          <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
             <img
               src="../images/icons8-bookmark.svg"
               alt="bookmark icon"
@@ -188,60 +159,280 @@
             </button>
           </div>
         </section>
-        <!--end of component input-->
+        <!--end of component app card input-->
       </main>
-      <!--input component app-nav-->
-      <nav class="nav-container">
-        <ul class="nav-container__list">
-          <li
-            class="nav-container__item nav-container__item--aktiv item1"
-            role="list"
-          >
-            <a href="index.html"
-              ><img
-                src="../../images/icons8-home.svg"
-                width="36"
-                height="36"
-                alt="Go to starting page"
-                class="nav-container__home-icon"
-            /></a>
-          </li>
-          <li class="nav-container__item item2">
-            <a href="bookmarks.html"
-              ><img
-                src="../../images/icons8-bookmark.svg"
-                width="36"
-                height="36"
-                alt="Go to page Bookmarks"
-                class="nav-container__bookmark bookmark--off"
-            /></a>
-          </li>
-          <li class="nav-container__item">
-            <a href="create.html"
-              ><img
-                src="../../images/icons8-idea.svg"
-                width="36"
-                height="36"
-                alt="Go to page Create Cards"
-                class="nav-container__create-icon"
-            /></a>
-          </li>
-
-          <li class="nav-container__item item4">
-            <a href="profile.html"
-              ><img
-                src="../../images/icons8-for-you.svg"
-                width="36"
-                height="36"
-                alt="Go to profile page"
-                class="nav-container__profile-icon"
-            /></a>
-          </li>
-        </ul>
-      </nav>
-      <!--end of component input-->
     </div>
-    <!--end of starting page -->
-    <!--start of bookmarks page -->
+
+    <!--end of starting page-->
+
+    <!--start of bookmarks page-->
+    <div data-js="bookmarkspage-top">
+      <h1
+        class="app-heading"
+        aria-describedby="Page bookmarks of the Quiz App showing quiz-cards"
+      >
+        Bookmarks
+      </h1>
+
+      <!--quiz-app-card 1-->
+
+      <section class="app-card">
+        <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
+          <img
+            src="../images/icons8-bookmark.svg"
+            alt="bookmark icon"
+            width="30"
+            height="30"
+          />
+        </button>
+        <h2 class="app-card__heading">Question:</h2>
+        <article class="app-card-question-container">
+          <p class="app-card-question">
+            Warum ist Positionieren so schwierig? Lorem ipsum dolor sit amet
+            consectetur?
+          </p>
+          <details class="app-card-action">
+            <summary
+              class="app-card-action--off shadow--bottom"
+              data-js="showanswer-button"
+            >
+              show answer
+            </summary>
+            there is no answer, but adipisicing elit. In tenetur necessitatibus
+            pariatur rerum, sequi quidem aut sunt unde facilis voluptatem natus
+            doloribus animi accusamus esse sint quo minus illum. Deserunt.
+          </details>
+        </article>
+
+        <div class="quiz-app-card-advise-tag__container">
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 1
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 2
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 3
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 4
+          </button>
+        </div>
+      </section>
+
+      <!--quiz-app-card 2-->
+
+      <section class="app-card">
+        <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
+          <img
+            src="../images/icons8-bookmark.svg"
+            alt="bookmark icon"
+            width="30"
+            height="30"
+          />
+        </button>
+        <h2 class="app-card__heading">Question:</h2>
+        <article class="app-card-question-container">
+          <p class="app-card-question">
+            Warum ist Positionieren so schwierig? Lorem ipsum dolor sit amet
+            consectetur?
+          </p>
+          <details class="app-card-action">
+            <summary class="app-card-action--off shadow--bottom">
+              show answer
+            </summary>
+            there is no answer, but adipisicing elit. In tenetur necessitatibus
+            pariatur rerum, sequi quidem aut sunt unde facilis voluptatem natus
+            doloribus animi accusamus esse sint quo minus illum. Deserunt.
+          </details>
+        </article>
+
+        <div class="quiz-app-card-advise-tag__container">
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 1
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 2
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 3
+          </button>
+          <button class="quiz-app-card-advise-tag shadow" type="button">
+            Tag 4
+          </button>
+        </div>
+      </section>
+    </div>
+    <!--end of bookmarks page-->
+    <!--start of create page-->
+    <div data-js="createpage-top">
+      <h1
+        class="app-heading"
+        aria-describedby="app-page with a form with input fields to create new quiz-app-cards"
+      >
+        Create
+      </h1>
+
+      <main class="createpage__main">
+        <form class="createpage__form" action="">
+          <label
+            for="createpage__inputfield--newquestion"
+            class="label__textarea1"
+            >Add a new question</label
+          >
+          <textarea
+            id="createpage__inputfield--newquestion"
+            name="createpage__input--newquestion"
+            class="createpage__textarea1"
+            cols="50"
+            rows="2"
+            placeholder="Please write your new quiz-question here"
+            autofocus="on"
+            autocomplete="off"
+            maxlength="100"
+            required
+          ></textarea>
+
+          <label
+            for="createpage__inputfield--newquestion__answer"
+            class="label__textarea2"
+            >Add answer</label
+          >
+          <textarea
+            id="createpage__inputfield--newquestion__answer"
+            name="createpage__input--newquestion-answer"
+            class="createpage__textarea2"
+            cols="50"
+            rows="6"
+            placeholder="Please write the answer according to your new quiz-question"
+            autocomplete="off"
+            maxlength="300"
+            required
+          ></textarea>
+
+          <label
+            for="createpage__inputfield--newquestion__tags"
+            class="label__input1"
+            >Add tags, divided by comma</label
+          >
+          <input
+            type="text"
+            id="createpage__inputfield--newquestion__tags"
+            autocomplete="off"
+            required
+            class="createpage__input1"
+          />
+
+          <button
+            class="quiz-app__button--submit shadow--bottom"
+            type="submit"
+            aria-label="submit-button to confirm your new quiz-question"
+          >
+            Submit
+          </button>
+        </form>
+      </main>
+    </div>
+    <!--end of create page-->
+    <!--start of profile page-->
+    <div data-js="profilepage-top">
+      <h1 class="app-heading">Profile</h1>
+
+      <main class="profile__main">
+        <div class="profile__wrapper__person">
+          <figure class="profile__figure">
+            <img
+              class="profile__pic"
+              src="https://images.unsplash.com/photo-1536782376847-5c9d14d97cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt="profile picture of user"
+              width="70"
+              height="70"
+            />
+          </figure>
+
+          <form action="" class="profile__username__field">
+            <label for="profile_username" class="profile__label__username"
+              >Username</label
+            >
+            <input
+              id="profile_username"
+              class="profile__input__username js-input-username"
+            />
+          </form>
+        </div>
+
+        <p class="profile__aboutyourself">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
+          maiores alias cupiditate architecto iste exercitationem minus deleniti
+          omnis odio! Recusandae reprehenderit debitis libero corporis quisquam
+          iusto asperiores eius dolorem quas.
+        </p>
+
+        <h2 class="profile__titleskills">Tags about skills</h2>
+
+        <div class="profile-wrapper__skills">
+          <span class="profile__skill--empty">tertert</span>
+          <span class="profile__skill--empty">mmmmmh</span>
+          <span class="profile__skill--empty">blabablblaba</span>
+          <span class="profile__skill--empty">njnj,n,jn</span>
+          <span class="profile__skill--empty">hohohoho</span>
+          <span class="profile__skill--empty">sdlgjsldkjgssdgjslf</span>
+          <span class="profile__skill--empty">lol</span>
+          <span class="profile__skill--empty">hopedyinglast</span>
+        </div>
+
+        <button data-js="loginbutton" class="profile__button--logout">
+          LOGIN
+        </button>
+        <button data-js="logoutbutton" class="profile__button--logout">
+          LOGOUT
+        </button>
+      </main>
+    </div>
+
+    <!--end of profile page -->
+    <!--input component app-nav-->
+    <nav class="nav-container">
+      <ul role="list" class="nav-container__list">
+        <li data-js="navlistitem1" class="nav-container__item item1">
+          <img
+            src="../../images/icons8-home.svg"
+            width="36"
+            height="36"
+            alt="Go to starting page"
+            class="nav-container__home-icon"
+          />
+        </li>
+        <li data-js="navlistitem2" class="nav-container__item item2">
+          <img
+            src="../../images/icons8-bookmark.svg"
+            width="36"
+            height="36"
+            alt="Go to page Bookmarks"
+            class="nav-container__bookmark bookmark--off"
+          />
+        </li>
+        <li data-js="navlistitem3" class="nav-container__item item3">
+          <img
+            src="../../images/icons8-idea.svg"
+            width="36"
+            height="36"
+            alt="Go to page Create Cards"
+            class="nav-container__create-icon"
+          />
+        </li>
+
+        <li data-js="navlistitem4" class="nav-container__item item4">
+          <img
+            src="../../images/icons8-for-you.svg"
+            width="36"
+            height="36"
+            alt="Go to profile page"
+            class="nav-container__profile-icon"
+          />
+        </li>
+      </ul>
+    </nav>
+    <!--end of component nav input-->
   </body>
 </html>
