@@ -64,9 +64,11 @@ body {
   padding: 0.5rem 0;
 }
 
-.profile__input__username {
+.profile__output__username {
   font-family: fantasy; /*utility.css*/
-  flex-shrink: 2;
+  flex-shrink: 1;
+  border: 1px dotted var(--darkpetrol);
+  padding: 5px;
 }
 
 .profile__titleskills {
