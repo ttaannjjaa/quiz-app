@@ -1,3 +1,7 @@
+import Nav from './js/Nav.js';
+
+Nav();
+
 import { bookmarks } from './js/bookmarks.js';
 
 bookmarks();
@@ -6,7 +10,8 @@ import { buttonAnswer } from './js/card_button_answer.js';
 
 buttonAnswer();
 
-//import Card from ''
+import Counter from './js/create.js';
 
-import Nav from './js/Nav.js';
-Nav();
+Counter();
+
+//import Card from ''
