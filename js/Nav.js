@@ -3,10 +3,27 @@ export default function Nav() {
   const navItem2 = document.querySelector('[data-js="navlistitem2"]');
   const navItem3 = document.querySelector('[data-js="navlistitem3"]');
   const navItem4 = document.querySelector('[data-js="navlistitem4"]');
+  const nav = document.querySelector('[data-js="nav-container"]');
+
+  const loginbtn = document.querySelector('[data-js="loginbutton"]');
+  const logoutbtn = document.querySelector('[data-js="logoutbutton"]');
+
+  const loginPage = document.querySelector('[data-js="loginpage-top"]');
   const pageStart = document.querySelector('[data-js="startingpage-top"]');
   const pageBookmarks = document.querySelector('[data-js="bookmarkspage-top"]');
   const pageCreate = document.querySelector('[data-js="createpage-top"]');
   const pageProfile = document.querySelector('[data-js="profilepage-top"]');
+
+  const userNameField = document.querySelector('[data-js="username"]');
+
+  loginbtn.addEventListener('click', () => {
+    loginPage.classList.add('app-page--invisible');
+    pageStart.classList.remove('app-page--invisible');
+    nav.classList.remove('nav-container--invisible');
+    logoutbtn.remove('profile__button--loggedout');
+    userName = userNameField.value;
+    console.log(userName);
+  });
 
   navItem1.addEventListener('click', () => {
     navItem1.classList.add('nav-container__item--aktiv');

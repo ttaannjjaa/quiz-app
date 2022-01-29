@@ -10,7 +10,53 @@
   </head>
 
   <body class="app-grid">
-    <div class="app-starting-page" data-js="startingpage-top">
+    <!--css in base.css / login.button in profile.css-->
+    <div data-js="loginpage-top">
+      <main class="login-page">
+        <h1 class="app-heading" aria-describedby="Login Page of the Quiz App">
+          Quiz-App
+        </h1>
+        <figure>
+          <img
+            src="./images/matt-walsh-tVkdGtEe2C4-unsplash.jpg"
+            alt=""
+            width="280"
+            height="350"
+          />
+          <!--Photo by <a 
+            href="https://unsplash.com/@two_tees?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matt Walsh</a> on <a href="https://unsplash.com/s/photos/question-mark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          -->
+        </figure>
+        <form
+          class="loginpage-form"
+          autocomplete="off"
+          aria-labelledby="Quiz-App Login-Page"
+        >
+          <label for="username__login" name="loginpage-form"
+            >Please enter your username 🪄</label
+          >
+          <input
+            type="text"
+            id="username__login"
+            maxlength="30px"
+            data-js="username"
+            class="username__imput"
+          />
+          <button
+            type="button"
+            data-js="loginbutton"
+            class="profile__button--logout"
+          >
+            LOGIN
+          </button>
+        </form>
+      </main>
+    </div>
+    <!--starting page with navigation-->
+    <div
+      class="app-starting-page app-page--invisible"
+      data-js="startingpage-top"
+    >
       <h1
         class="app-heading"
         aria-describedby="Starting Page of the Quiz App showing first quiz-cards"
@@ -381,20 +427,21 @@
         <h2 class="profile__titleskills">Tags about skills</h2>
 
         <div class="profile-wrapper__skills">
-          <span class="profile__skill--empty">tertert</span>
-          <span class="profile__skill--empty">mmmmmh</span>
-          <span class="profile__skill--empty">blabablblaba</span>
-          <span class="profile__skill--empty">njnj,n,jn</span>
-          <span class="profile__skill--empty">hohohoho</span>
-          <span class="profile__skill--empty">sdlgjsldkjgssdgjslf</span>
-          <span class="profile__skill--empty">lol</span>
-          <span class="profile__skill--empty">hopedyinglast</span>
+          <output class="profile__skill--empty">tertert</output>
+          <output class="profile__skill--empty">mmmmmh</output>
+          <output class="profile__skill--empty">blabablblaba</output>
+          <output class="profile__skill--empty">njnj,n,jn</output>
+          <output class="profile__skill--empty">hohohoho</output>
+          <output class="profile__skill--empty">sdlgjsldkjgssdgjslf</output>
+          <output class="profile__skill--empty">lol</output>
+          <output class="profile__skill--empty">hopedyinglast</output>
         </div>
 
-        <button data-js="loginbutton" class="profile__button--logout">
-          LOGIN
-        </button>
-        <button data-js="logoutbutton" class="profile__button--logout">
+        <button
+          type="button"
+          data-js="logoutbutton"
+          class="profile__button--logout"
+        >
           LOGOUT
         </button>
       </main>
@@ -402,7 +449,7 @@
 
     <!--end of profile page -->
     <!--input component app-nav-->
-    <nav class="nav-container">
+    <nav class="nav-container nav-container--invisible" data-js="nav-container">
       <ul role="list" class="nav-container__list">
         <li data-js="navlistitem1" class="nav-container__item item1">
           <img

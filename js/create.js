@@ -6,16 +6,16 @@ export default function Counter() {
     '[data-js="output-counter1"]'
   );
 
-  if (inputTextfieldQuestion.value.length < 181) {
-    inputTextfieldQuestion.addEventListener('input', () => {
-      outputCounterQuestion.value = inputTextfieldQuestion.value.length;
-    });
-  }
-  if (outputCounterQuestion.textContent == '180') {
-    //alert(`sorry ${username}, there is no text space remaining`);
-    console.log('else-Strang');
-    //alert('Hello World');
-  }
+  inputTextfieldQuestion.addEventListener('input', () => {
+    outputCounterQuestion.value = inputTextfieldQuestion.value.length;
+    if (inputTextfieldQuestion.value.length === 180) {
+      //alert(`sorry ${username}, there is no text space remaining`);
+
+      alert(`sorry ${userName}, no text space left`);
+    }
+  });
+
+  // zweite Textarea
 
   const inputTextfieldAnswer = document.querySelector(
     '[data-js="createpage__input--textarea2"]'
@@ -35,3 +35,23 @@ export default function Counter() {
     //alert('Hello World');
   }
 }
+
+// test
+
+//   const inputTextfieldAnswer = document.querySelector(
+//     '[data-js="createpage__input--textarea2"]'
+//   );
+//   let outputCounterAnswer = document.querySelector(
+//     '[data-js="output-counter2"]'
+//   );
+
+//   if (inputTextfieldAnswer.value.length < 301) {
+//     inputTextfieldAnswer.addEventListener('input', () => {
+//       outputCounterAnswer.value = inputTextfieldAnswer.value.length;
+//     });
+//     if (outputCounterAnswer.value == '300') {
+//       //alert(`sorry ${username}, there is no text space remaining`);
+//       console.log('else-Strang');
+//     }
+//   }
+// }
