@@ -60,3 +60,7 @@
   justify-content: center;
   align-items: center;
 }
+
+.display-con {
+  display: contents !important;
+}

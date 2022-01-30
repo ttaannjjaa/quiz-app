@@ -11,24 +11,28 @@
 
   <body class="app-grid">
     <!--css in base.css / login.button in profile.css-->
-    <div data-js="loginpage-top">
+    <div class="login-page-wrapper" data-js="loginpage-top">
       <main class="login-page">
-        <h1 class="app-heading" aria-describedby="Login Page of the Quiz App">
+        <h1
+          class="app-heading app-heading__login"
+          aria-describedby="Login Page of the Quiz App"
+        >
           Quiz-App
         </h1>
-        <figure>
+        <figure class="login__figure">
           <img
             src="./images/matt-walsh-tVkdGtEe2C4-unsplash.jpg"
             alt=""
             width="280"
-            height="350"
+            height="340"
+            class="login__img"
           />
           <!--Photo by <a 
             href="https://unsplash.com/@two_tees?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matt Walsh</a> on <a href="https://unsplash.com/s/photos/question-mark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
           -->
         </figure>
         <form
-          class="loginpage-form"
+          class="loginpage__form"
           autocomplete="off"
           aria-labelledby="Quiz-App Login-Page"
         >
@@ -41,18 +45,22 @@
             maxlength="30px"
             data-js="username"
             class="username__imput"
+            autocomplete="off"
+            autofocus="on"
+            required
           />
           <button
             type="button"
             data-js="loginbutton"
-            class="profile__button--logout"
+            class="loginpage__loginbutton profile__button--logout"
+            aria-labelledby="login-button"
           >
             LOGIN
           </button>
         </form>
       </main>
     </div>
-    <!--starting page with navigation-->
+    <!--starting page / navigation now at the end of this html-->
     <div
       class="app-starting-page app-page--invisible"
       data-js="startingpage-top"
@@ -386,7 +394,12 @@
     <!--end of create page-->
     <!--start of profile page-->
     <div class="app-page--invisible" data-js="profilepage-top">
-      <h1 class="app-heading">Profile</h1>
+      <h1
+        class="app-heading"
+        aria-describedby="profile page of quiz-app with logout-button"
+      >
+        Profile
+      </h1>
 
       <main class="profile__main">
         <div class="profile__wrapper__person">
@@ -426,7 +439,10 @@
 
         <h2 class="profile__titleskills">Tags about skills</h2>
 
-        <div class="profile-wrapper__skills">
+        <div
+          class="profile-wrapper__skills"
+          aria-describedby="personnel skills can be put in the following skill-tags - form not yet available"
+        >
           <output class="profile__skill--empty">tertert</output>
           <output class="profile__skill--empty">mmmmmh</output>
           <output class="profile__skill--empty">blabablblaba</output>

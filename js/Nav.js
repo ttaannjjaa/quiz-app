@@ -14,6 +14,7 @@ export default function Nav() {
   const pageCreate = document.querySelector('[data-js="createpage-top"]');
   const pageProfile = document.querySelector('[data-js="profilepage-top"]');
 
+  loginPage.classList.remove('app-grid');
   const userNameField = document.querySelector('[data-js="username"]');
 
   loginbtn.addEventListener('click', () => {
