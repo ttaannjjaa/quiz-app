@@ -20,8 +20,9 @@ export default function Nav() {
   loginbtn.addEventListener('click', () => {
     loginPage.classList.add('app-page--invisible');
     pageStart.classList.remove('app-page--invisible');
+    navItem1.classList.add('nav-container__item--aktiv');
     nav.classList.remove('nav-container--invisible');
-    logoutbtn.remove('profile__button--loggedout');
+    //logoutbtn.remove('profile__button--loggedout');
     userName = userNameField.value;
     console.log(userName);
   });
@@ -68,5 +69,12 @@ export default function Nav() {
     pageBookmarks.classList.add('page--invisible');
     pageCreate.classList.add('app-page--invisible');
     pageProfile.classList.remove('app-page--invisible');
+  });
+
+  logoutbtn.addEventListener('click', () => {
+    loginPage.classList.remove('app-page--invisible');
+    navItem4.classList.remove('nav-container__item--aktiv');
+    nav.classList.add('nav-container--invisible');
+    pageProfile.add('app-page--invisible');
   });
 }

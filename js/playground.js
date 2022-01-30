@@ -11,20 +11,20 @@
 // });
 
 //bookmark// // nur der erste auf der Seite funktioniert //
-const cardBookmark = document.querySelector('[data-js="bookmark-toggle"]');
+// const cardBookmark = document.querySelector('[data-js="bookmark-toggle"]');
 
-cardBookmark.addEventListener('click', () => {
-  cardBookmark.classList.toggle('app-card__bookmark--not-activated');
-});
+// cardBookmark.addEventListener('click', () => {
+//   cardBookmark.classList.toggle('app-card__bookmark--not-activated');
+// });
 
-//show-hide answer on quiz-card -
-//Lösung MDN Events im details Artikel - funktioniert nicht!
+// //show-hide answer on quiz-card -
+// //Lösung MDN Events im details Artikel - funktioniert nicht!
 
-const summaryButton = document.querySelector('[data-js="showanswer-button"]');
-const textHide = 'hide answer';
-const textShow = 'show answer';
+// const summaryButton = document.querySelector('[data-js="showanswer-button"]');
+// const textHide = 'hide answer';
+// const textShow = 'show answer';
 
-// summaryButton.addEventListener('toggle', event => {
+// // summaryButton.addEventListener('toggle', event => {
 //   if (summaryButton.opened) {
 //     summaryButton.textContent.trim() = textHide;
 //     summaryButton.classList.add('app-card-action--on');

@@ -1,47 +1,54 @@
 .createpage__form {
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
-  margin: 20px auto;
+  margin: 10px auto;
   flex-wrap: wrap;
   padding: 1.5rem;
   border: 1px dotted var(--darkpetrol);
   border-radius: 10px;
   position: relative;
 }
-.label__textarea1,
-.label__textarea2,
-.label__input1 {
+
+.create-label__textarea1,
+.create-label__textarea2,
+.create-label__input1 {
   padding: 1rem 0 0.5rem 0;
 }
 
-.create_output {
+.create__output {
   border: 0.5px solid var(--petrolgrey);
-  min-width: 35px;
+  min-width: 40px;
   min-height: 20px;
   text-align: right;
   font-size: 0.9rem;
   padding: 2px;
-}
-
-.create_output1 {
   position: absolute;
-  left: 390px;
-  top: 40px;
+  left: 190px;
+  color: var(--silver);
 }
 
-.create_output2 {
-  position: absolute;
-  left: 390px;
-  top: 177px;
+.create__output1 {
+  top: 36px;
 }
 
-textarea {
-  margin-bottom: 2rem;
+.create__output2 {
+  top: 220px;
+}
+
+.createpage__textarea {
+  margin-bottom: 1rem;
   padding: 0.5rem;
 }
 
-input {
+.createpage__textarea--1 {
+  height: 120px;
+}
+
+.createpage__textarea--2 {
+  height: 220px;
+}
+
+.createpage__input {
   margin-bottom: 1rem;
   padding: 0.5rem;
 }

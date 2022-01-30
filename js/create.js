@@ -11,7 +11,7 @@ export default function Counter() {
     if (inputTextfieldQuestion.value.length === 180) {
       //alert(`sorry ${username}, there is no text space remaining`);
 
-      alert(`sorry ${userName}, no text space left`);
+      alert(`sorry, no text space left`);
     }
   });
 
@@ -24,12 +24,16 @@ export default function Counter() {
     '[data-js="output-counter2"]'
   );
 
-  if (inputTextfieldAnswer.value.length < 301) {
+  if (inputTextfieldAnswer.value.length < 351) {
     inputTextfieldAnswer.addEventListener('input', () => {
       outputCounterAnswer.value = inputTextfieldAnswer.value.length;
     });
   }
-  if (outputCounterAnswer.value == '300') {
+
+  if (outputCounterAnswer.value == '350') {
+    inputTextfieldAnswer.addEventListener('input', () => {
+      outputCounterAnswer.value = inputTextfieldAnswer.value.length;
+    });
     //alert(`sorry ${username}, there is no text space remaining`);
     console.log('else-Strang');
     //alert('Hello World');
