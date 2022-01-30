@@ -8,4 +8,5 @@ when you learn something - write down the question a teacher could ask you to ch
 
 
 **How to start** 
+
 You can choose a username you like (of course not too long) and then push the login-button. There are 4 available pages you can always reach with the navigation at the bottom of the app. The first one is the quiz-app page itself, on the bookmarks page you have the storage of your cards. Next comes the create page, here you find a form, so you can produce more quiz-app cards as described above. At the profile page you can add a picture and some more informations about yourself if you like . Here you also find the logout-button. Have a lot of fun with your new quiz-app 🪄 
