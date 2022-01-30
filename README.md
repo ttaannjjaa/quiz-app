@@ -4,7 +4,7 @@ okay, the "official name" is quiz-app, but under the hood it is a learning app y
 
 here is your **new strategy**
 
-when you learn something - write down the question a teacher could ask you to check whether you kept the most important aspects about the theme in mind. Because you have your learning material in front of you (desk or display) just add the correct answer, if you like also some motivational words for especially difficult topics. You can give you also 1 - 4 hints around and then add it to your increasing storage of quiz-app-cards. If you don't know the answer the first time, you can highlight this card with a bookmark at the right upper corner, so you can easily see, which are the cards you should the next time more often repeat on the quiz page. Of course you can also play the quiz together with a friend. So you can both support each other finding the correct answer.
+when you learn something - write down the question a teacher could ask you to check whether you kept the most important aspects about the theme in mind. Because you have your learning material in front of you (desk or display) just add the correct answer, if you like also some motivational words for especially difficult topics. You can give yourself also 1 - 4 hints and then add your new produced card to your increasing storage of quiz-app-cards. When you play a quiz-round and you don't know the answer the first time, you can highlight this card with a bookmark at the right upper corner, so you can easily see, which are the cards you should the next time more often repeat on the quiz page. Of course you can also play the quiz together with a friend. So you can both support each other finding the correct answer.
 
 
 **How to start** 
