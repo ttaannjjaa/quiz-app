@@ -2,11 +2,11 @@
   background-color: var(--white);
   border-left: 2px solid var(--darkpetrol);
   border-right: 2px solid var(--darkpetrol);
+  border-bottom: 2px solid var(--darkpetrol);
   border-top: 4px solid var(--darkpetrol);
   grid-row: 3 / 4;
   height: 48px;
   z-index: 10;
-  margin-bottom: 2px;
 }
 
 .nav-container__list {

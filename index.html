@@ -11,24 +11,28 @@
 
   <body class="app-grid">
     <!--css in base.css / login.button in profile.css-->
-    <div data-js="loginpage-top">
+    <div class="login-page-wrapper" data-js="loginpage-top">
       <main class="login-page">
-        <h1 class="app-heading" aria-describedby="Login Page of the Quiz App">
+        <h1
+          class="app-heading app-heading__login"
+          aria-describedby="Login Page of the Quiz App"
+        >
           Quiz-App
         </h1>
-        <figure>
+        <figure class="login__figure">
           <img
             src="./images/matt-walsh-tVkdGtEe2C4-unsplash.jpg"
             alt=""
             width="280"
-            height="350"
+            height="340"
+            class="login__img"
           />
           <!--Photo by <a 
             href="https://unsplash.com/@two_tees?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matt Walsh</a> on <a href="https://unsplash.com/s/photos/question-mark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
           -->
         </figure>
         <form
-          class="loginpage-form"
+          class="loginpage__form"
           autocomplete="off"
           aria-labelledby="Quiz-App Login-Page"
         >
@@ -38,21 +42,25 @@
           <input
             type="text"
             id="username__login"
-            maxlength="30px"
+            maxlength="15px"
             data-js="username"
-            class="username__imput"
+            class="loginpage-username__input"
+            autocomplete="off"
+            autofocus="on"
+            required
           />
           <button
             type="button"
             data-js="loginbutton"
-            class="profile__button--logout"
+            class="log__button log__button--login"
+            aria-labelledby="login-button"
           >
             LOGIN
           </button>
         </form>
       </main>
     </div>
-    <!--starting page with navigation-->
+    <!--starting page / navigation now at the end of this html-->
     <div
       class="app-starting-page app-page--invisible"
       data-js="startingpage-top"
@@ -323,13 +331,13 @@
         <form class="createpage__form" action="">
           <label
             for="createpage__inputfield--newquestion"
-            class="label__textarea1"
-            >Add a new question</label
-          >
+            class="create-label__textarea1"
+            >Add a new question
+          </label>
           <textarea
             id="createpage__inputfield--newquestion"
             name="createpage__input--newquestion"
-            class="createpage__textarea1"
+            class="createpage__textarea createpage__textarea--1"
             data-js="createpage__input--textarea1"
             placeholder="Please write your new quiz-question here"
             autofocus="on"
@@ -337,32 +345,37 @@
             maxlength="180"
             required
           ></textarea>
-          <output class="create_output create_output1" data-js="output-counter1"
-            >0</output
+          <output
+            class="create__output create__output1"
+            data-js="output-counter1"
+            >max 180 signs</output
           >
 
           <label
             for="createpage__inputfield--newquestion__answer"
-            class="label__textarea2"
+            class="create-label__textarea2"
             >Add answer</label
           >
           <textarea
             id="createpage__inputfield--newquestion__answer"
             name="createpage__input--newquestion-answer"
-            class="createpage__textarea2"
+            class="createpage__textarea createpage__textarea--2"
             data-js="createpage__input--textarea2"
             placeholder="Please write the answer according to your new quiz-question"
             autocomplete="off"
             maxlength="300"
             required
-          ></textarea>
-          <output class="create_output create_output2" data-js="output-counter2"
-            >0</output
+          >
+          </textarea>
+          <output
+            class="create__output create__output2"
+            data-js="output-counter2"
+            >max 350 signs</output
           >
 
           <label
             for="createpage__inputfield--newquestion__tags"
-            class="label__input1"
+            class="create-label__input1"
             >Add tags, divided by comma</label
           >
           <input
@@ -370,12 +383,12 @@
             id="createpage__inputfield--newquestion__tags"
             autocomplete="off"
             required
-            class="createpage__input1"
+            class="createpage__input"
           />
-
+          <!--reminder:change back type = "submit" when needed-->
           <button
-            class="quiz-app__button--submit shadow--bottom"
-            type="submit"
+            class="quiz-app__button--submit shadow--bottom log__button"
+            type="button"
             aria-label="submit-button to confirm your new quiz-question"
           >
             Submit
@@ -386,7 +399,12 @@
     <!--end of create page-->
     <!--start of profile page-->
     <div class="app-page--invisible" data-js="profilepage-top">
-      <h1 class="app-heading">Profile</h1>
+      <h1
+        class="app-heading"
+        aria-describedby="profile page of quiz-app with logout-button"
+      >
+        Profile
+      </h1>
 
       <main class="profile__main">
         <div class="profile__wrapper__person">
@@ -426,7 +444,10 @@
 
         <h2 class="profile__titleskills">Tags about skills</h2>
 
-        <div class="profile-wrapper__skills">
+        <div
+          class="profile-wrapper__skills"
+          aria-describedby="personnel skills can be put in the following skill-tags - form not yet available"
+        >
           <output class="profile__skill--empty">tertert</output>
           <output class="profile__skill--empty">mmmmmh</output>
           <output class="profile__skill--empty">blabablblaba</output>
@@ -440,7 +461,7 @@
         <button
           type="button"
           data-js="logoutbutton"
-          class="profile__button--logout"
+          class="log__button log__button--logout"
         >
           LOGOUT
         </button>

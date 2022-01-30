@@ -18,6 +18,10 @@ nav {
   background-color: var(--lightpetrol);
 }
 
+.login-page-wrapper {
+  grid-row: 1 / 4;
+}
+
 .login-page {
   display: flex;
   flex-direction: column;
@@ -33,7 +37,7 @@ nav {
   font-family: fantasy;
   background-color: silver;
   border: 2px solid var(--darkpetrol);
-  padding: 2px;
+  padding: 2px 0 0;
   text-align: center;
   font-weight: bolder !important;
   letter-spacing: 0.5rem;
@@ -44,4 +48,31 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+.app-heading__login {
+  box-shadow: none;
+}
+
+.login__img {
+  border-radius: 15px 60px 15px 60px;
+  box-shadow: 1px 1px 30px var(--darkpetrol);
+}
+
+.loginpage__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginpage__form > label {
+  margin-bottom: 0.5rem;
+}
+
+.loginpage-username__input {
+  height: 30px;
+  max-width: 180px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
