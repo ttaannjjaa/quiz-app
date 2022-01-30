@@ -60,7 +60,7 @@ export default function Nav() {
     navItem3.classList.remove('nav-container__item--aktiv');
     navItem4.classList.add('nav-container__item--aktiv');
     pageStart.classList.add('app-page--invisible');
-    pageBookmarks.classList.add('page--invisible');
+    pageBookmarks.classList.add('app-page--invisible');
     pageCreate.classList.add('app-page--invisible');
     pageProfile.classList.remove('app-page--invisible');
   });
