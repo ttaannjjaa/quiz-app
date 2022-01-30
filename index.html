@@ -10,7 +10,7 @@
   </head>
 
   <body class="app-grid">
-    <!--css in base.css / login.button in profile.css-->
+    <!--css in base.css -->
     <div class="login-page-wrapper" data-js="loginpage-top">
       <main class="login-page">
         <h1
@@ -74,7 +74,7 @@
       <main class="app-grid__scrollarea">
         <!--input component quiz-app-card-->
         <!--first visible card-->
-        <section class="app-card">
+        <section class="app-card" data-js="app-card">
           <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
             <img
               src="../images/icons8-bookmark.svg"
@@ -120,7 +120,7 @@
         </section>
 
         <!--second visible card - bookmark not highlighted-->
-        <section class="app-card">
+        <section class="app-card" data-js="app-card">
           <button
             data-js="bookmark-toggle"
             class="app-card__bookmark shadow app-card__bookmark--not-activated"
@@ -169,7 +169,7 @@
         </section>
         <!--the third quiz-app card -->
 
-        <section class="app-card">
+        <section class="app-card" data-js="app-card">
           <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
             <img
               src="../images/icons8-bookmark.svg"
@@ -230,7 +230,7 @@
 
       <!--quiz-app-card 1-->
 
-      <section class="app-card">
+      <section class="app-card" data-js="app-card">
         <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
           <img
             src="../images/icons8-bookmark.svg"
@@ -276,7 +276,7 @@
 
       <!--quiz-app-card 2-->
 
-      <section class="app-card">
+      <section class="app-card" data-js="app-card">
         <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
           <img
             src="../images/icons8-bookmark.svg"
@@ -292,7 +292,10 @@
             consectetur?
           </p>
           <details class="app-card-action">
-            <summary class="app-card-action--off shadow--bottom">
+            <summary
+              class="app-card-action--off shadow--bottom"
+              data-js="showanswer-button"
+            >
               show answer
             </summary>
             there is no answer, but adipisicing elit. In tenetur necessitatibus
@@ -365,12 +368,11 @@
             autocomplete="off"
             maxlength="300"
             required
-          >
-          </textarea>
+          ></textarea>
           <output
             class="create__output create__output2"
             data-js="output-counter2"
-            >max 350 signs</output
+            >max 300 signs</output
           >
 
           <label
