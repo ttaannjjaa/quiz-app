@@ -1,10 +1,6 @@
 export default function Counter() {
-  const inputTextfieldQuestion = document.querySelector(
-    '[data-js="createpage__input--textarea1"]'
-  );
-  let outputCounterQuestion = document.querySelector(
-    '[data-js="output-counter1"]'
-  );
+  const inputTextfieldQuestion = document.querySelector('[data-js="createpage__input--textarea1"]');
+  let outputCounterQuestion = document.querySelector('[data-js="output-counter1"]');
 
   inputTextfieldQuestion.addEventListener('input', () => {
     outputCounterQuestion.value = inputTextfieldQuestion.value.length;
@@ -17,12 +13,8 @@ export default function Counter() {
 
   // zweite Textarea
 
-  const inputTextfieldAnswer = document.querySelector(
-    '[data-js="createpage__input--textarea2"]'
-  );
-  let outputCounterAnswer = document.querySelector(
-    '[data-js="output-counter2"]'
-  );
+  const inputTextfieldAnswer = document.querySelector('[data-js="createpage__input--textarea2"]');
+  let outputCounterAnswer = document.querySelector('[data-js="output-counter2"]');
 
   if (inputTextfieldAnswer.value.length < 351) {
     inputTextfieldAnswer.addEventListener('input', () => {
