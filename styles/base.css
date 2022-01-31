@@ -45,8 +45,8 @@ nav {
   text-shadow: 1px 1px var(--black);
   text-align: center;
   width: 100%;
-  position: sticky;
-  top: 0;
+  position: sticky !important;
+  top: -2px;
   z-index: 10;
 }
 

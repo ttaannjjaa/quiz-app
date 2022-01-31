@@ -5,9 +5,7 @@ export default function Card(cardElement) {
     cardBookmark.classList.toggle('app-card__bookmark--activated');
   });
 
-  const summaryButton = cardElement.querySelector(
-    '[data-js="showanswer-button"]'
-  );
+  const summaryButton = cardElement.querySelector('[data-js="showanswer-button"]');
   const textHide = 'hide answer';
   const textShow = 'show answer';
 
