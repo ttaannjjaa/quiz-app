@@ -53,7 +53,7 @@
     <!--starting page / navigation now at the end of this html-->
     <div class="app-starting-page app-page--invisible" data-page="startingpage">
       <h1
-        class="app-heading"
+        class="app-heading app-grid-header"
         aria-describedby="Starting Page of the Quiz App showing first quiz-cards"
       >
         Quiz-App
@@ -150,71 +150,98 @@
 
     <!--start of bookmarks page-->
     <div class="app-page--invisible" data-page="bookmarkspage">
-      <h1 class="app-heading" aria-describedby="Page bookmarks of the Quiz App showing quiz-cards">
+      <h1
+        class="app-heading app-grid-header"
+        aria-describedby="Page bookmarks of the Quiz App showing quiz-cards"
+      >
         Bookmarks
       </h1>
 
       <!--quiz-app-card 1-->
+      <main class="app-grid__scrollarea">
+        <section class="app-card" data-js="app-card">
+          <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
+            <img src="../images/icons8-bookmark.svg" alt="bookmark icon" width="30" height="30" />
+          </button>
+          <h2 class="app-card__heading">Question:</h2>
+          <article class="app-card-question-container">
+            <p class="app-card-question">Why are there so many issues with positioning?</p>
+            <details class="app-card-action">
+              <summary class="app-card-action--off shadow--bottom" data-js="showanswer-button">
+                show answer
+              </summary>
+              there is no answer, but as always...practicing helps 😁
+            </details>
+          </article>
 
-      <section class="app-card" data-js="app-card">
-        <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
-          <img src="../images/icons8-bookmark.svg" alt="bookmark icon" width="30" height="30" />
-        </button>
-        <h2 class="app-card__heading">Question:</h2>
-        <article class="app-card-question-container">
-          <p class="app-card-question">Why are there so many issues with positioning?</p>
-          <details class="app-card-action">
-            <summary class="app-card-action--off shadow--bottom" data-js="showanswer-button">
-              show answer
-            </summary>
-            there is no answer, but as always...practicing helps 😁
-          </details>
-        </article>
+          <div class="quiz-app-card-advise-tag__container">
+            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 1</button>
+            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 2</button>
+            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 3</button>
+            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 4</button>
+          </div>
+        </section>
 
-        <div class="quiz-app-card-advise-tag__container">
-          <button class="quiz-app-card-advise-tag shadow" type="button">Tag 1</button>
-          <button class="quiz-app-card-advise-tag shadow" type="button">Tag 2</button>
-          <button class="quiz-app-card-advise-tag shadow" type="button">Tag 3</button>
-          <button class="quiz-app-card-advise-tag shadow" type="button">Tag 4</button>
-        </div>
-      </section>
+        <!--quiz-app-card 2-->
 
-      <!--quiz-app-card 2-->
+        <section class="app-card" data-js="app-card">
+          <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
+            <img src="../images/icons8-bookmark.svg" alt="bookmark icon" width="30" height="30" />
+          </button>
+          <h2 class="app-card__heading">Question:</h2>
+          <article class="app-card-question-container">
+            <p class="app-card-question">What's the "strict equality" operator in js?</p>
+            <details class="app-card-action">
+              <summary class="app-card-action--off shadow--bottom" data-js="showanswer-button">
+                show answer
+              </summary>
+              not one, not two, but yes 3 equal signs, looks like ===
+            </details>
+          </article>
 
-      <section class="app-card" data-js="app-card">
-        <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
-          <img src="../images/icons8-bookmark.svg" alt="bookmark icon" width="30" height="30" />
-        </button>
-        <h2 class="app-card__heading">Question:</h2>
-        <article class="app-card-question-container">
-          <p class="app-card-question">What's the "strict equality" operator in js?</p>
-          <details class="app-card-action">
-            <summary class="app-card-action--off shadow--bottom" data-js="showanswer-button">
-              show answer
-            </summary>
-            not one, not two, but yes 3 equal signs, looks like ===
-          </details>
-        </article>
+          <div class="quiz-app-card-advise-tag__container">
+            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 1</button>
+            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 2</button>
+            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 3</button>
+            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 4</button>
+          </div>
+        </section>
 
-        <div class="quiz-app-card-advise-tag__container">
-          <button class="quiz-app-card-advise-tag shadow" type="button">Tag 1</button>
-          <button class="quiz-app-card-advise-tag shadow" type="button">Tag 2</button>
-          <button class="quiz-app-card-advise-tag shadow" type="button">Tag 3</button>
-          <button class="quiz-app-card-advise-tag shadow" type="button">Tag 4</button>
-        </div>
-      </section>
+        <section class="app-card" data-js="app-card">
+          <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
+            <img src="../images/icons8-bookmark.svg" alt="bookmark icon" width="30" height="30" />
+          </button>
+          <h2 class="app-card__heading">Question:</h2>
+          <article class="app-card-question-container">
+            <p class="app-card-question">Why are there so many issues with positioning?</p>
+            <details class="app-card-action">
+              <summary class="app-card-action--off shadow--bottom" data-js="showanswer-button">
+                show answer
+              </summary>
+              there is no answer, but as always...practicing helps 😁
+            </details>
+          </article>
+
+          <div class="quiz-app-card-advise-tag__container">
+            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 1</button>
+            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 2</button>
+            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 3</button>
+            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 4</button>
+          </div>
+        </section>
+      </main>
     </div>
     <!--end of bookmarks page-->
     <!--start of create page-->
-    <div class="app-page--invisible" data-page="createpage">
+    <div class="createpage app-page--invisible" data-page="createpage">
       <h1
-        class="app-heading"
+        class="app-heading app-grid-header"
         aria-describedby="app-page with a form with input fields to create new quiz-app-cards"
       >
         Create
       </h1>
 
-      <main class="createpage__main">
+      <main class="createpage__main app-grid__scrollarea">
         <form class="createpage__form" action="">
           <label for="createpage__inputfield--newquestion" class="create-label__textarea1"
             >Add a new question
@@ -273,12 +300,15 @@
     </div>
     <!--end of create page-->
     <!--start of profile page-->
-    <div class="app-page--invisible" data-page="profilepage">
-      <h1 class="app-heading" aria-describedby="profile page of quiz-app with logout-button">
+    <div class="profilepage app-page--invisible" data-page="profilepage">
+      <h1
+        class="app-heading app-grid-header"
+        aria-describedby="profile page of quiz-app with logout-button"
+      >
         Profile
       </h1>
 
-      <main class="profile__main">
+      <main class="profile__main app-grid__scrollarea">
         <div class="profile__wrapper__person">
           <figure class="profile__figure">
             <img

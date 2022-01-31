@@ -3,9 +3,18 @@
   grid-template-rows: 48px 1fr 48px;
 }
 
+.app-grid-header {
+  grid-row: 1 / 2;
+  position: fixed;
+  top: 0px;
+}
+
 .app-grid__scrollarea {
+  grid-row: 2 / 3;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  top: 68px;
 }
