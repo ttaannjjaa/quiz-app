@@ -12,10 +12,10 @@
   <body class="app-grid">
     <!--css in base.css -->
     <div class="login-page-wrapper" data-page="loginpage-top">
+      <h1 class="app-heading app-heading__login" aria-describedby="Login Page of the Quiz App">
+        Quiz-App
+      </h1>
       <main class="login-page">
-        <h1 class="app-heading app-heading__login" aria-describedby="Login Page of the Quiz App">
-          Quiz-App
-        </h1>
         <figure class="login__figure">
           <img
             src="./images/matt-walsh-tVkdGtEe2C4-unsplash.jpg"
@@ -37,7 +37,6 @@
             data-js="username"
             class="loginpage-username__input"
             autocomplete="off"
-            autofocus="on"
             required
           />
           <button
@@ -226,7 +225,6 @@
             class="createpage__textarea createpage__textarea--1"
             data-js="createpage__input--textarea1"
             placeholder="Please write your new quiz-question here"
-            autofocus="on"
             autocomplete="off"
             maxlength="180"
             required
