@@ -81,10 +81,18 @@
           </article>
 
           <div class="quiz-app-card-advise-tag__container">
-            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 1</button>
-            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 2</button>
-            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 3</button>
-            <button class="quiz-app-card-advise-tag shadow" type="button">Tag 4</button>
+            <button class="quiz-app-card-advise-tag shadow" type="button" data-card="tag1">
+              Tag 1
+            </button>
+            <button class="quiz-app-card-advise-tag shadow" type="button" data-card="tag2">
+              Tag 2
+            </button>
+            <button class="quiz-app-card-advise-tag shadow" type="button" data-card="tag3">
+              Tag 3
+            </button>
+            <button class="quiz-app-card-advise-tag shadow" type="button" data-card="tag4">
+              Tag 4
+            </button>
           </div>
         </section>
 
@@ -286,12 +294,14 @@
             autocomplete="off"
             required
             class="createpage__input"
+            data-input="tagsforcard"
           />
           <!--reminder:change back type = "submit" when needed-->
           <button
-            class="quiz-app__button--submit shadow--bottom log__button"
+            class="createpage__button--submit shadow--bottom log__button"
             type="button"
             aria-label="submit-button to confirm your new quiz-question"
+            data-submit="createpage"
           >
             Submit
           </button>

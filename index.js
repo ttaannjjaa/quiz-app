@@ -24,3 +24,7 @@ const allCardElements = document.querySelectorAll('[data-js="app-card"]');
 allCardElements.forEach(cardElement => {
   Card(cardElement);
 });
+
+import { tagTest } from './js/card_production_self.js';
+
+tagTest();
