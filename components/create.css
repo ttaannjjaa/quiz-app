@@ -16,14 +16,14 @@
 }
 
 .create__output {
-  border: 0.5px solid var(--petrolgrey);
+  border: 0.5px dotted var(--petrolgrey);
   min-width: 40px;
   min-height: 20px;
   text-align: right;
   font-size: 0.9rem;
   padding: 2px;
   position: absolute;
-  left: 210px;
+  left: 300px;
   color: var(--silver);
 }
 
