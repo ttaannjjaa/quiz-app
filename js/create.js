@@ -1,5 +1,5 @@
 export default function Counter() {
-  const inputTextfieldQuestion = document.querySelector('[data-js="createpage__input--textarea1"]');
+  const inputTextfieldQuestion = document.querySelector('[data-input="createpage__textarea1"]');
   let outputCounterQuestion = document.querySelector('[data-js="output-counter1"]');
 
   inputTextfieldQuestion.addEventListener('input', () => {
@@ -13,7 +13,7 @@ export default function Counter() {
 
   // zweite Textarea
 
-  const inputTextfieldAnswer = document.querySelector('[data-js="createpage__input--textarea2"]');
+  const inputTextfieldAnswer = document.querySelector('[data-js="createpage__textarea2"]');
   let outputCounterAnswer = document.querySelector('[data-js="output-counter2"]');
 
   if (inputTextfieldAnswer.value.length < 351) {
@@ -22,13 +22,13 @@ export default function Counter() {
     });
   }
 
-  if (outputCounterAnswer.value == '350') {
+  if (outputCounterAnswer.textContent == 350) {
     inputTextfieldAnswer.addEventListener('input', () => {
       outputCounterAnswer.value = inputTextfieldAnswer.value.length;
+
+      //alert(`sorry ${username}, there is no text space remaining`);
+      console.log('else-Strang');
     });
-    //alert(`sorry ${username}, there is no text space remaining`);
-    console.log('else-Strang');
-    //alert('Hello World');
   }
 }
 

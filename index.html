@@ -151,6 +151,10 @@
           </div>
         </section>
         <!--end of component app card input-->
+        <!--hier form-input vorgesehen-->
+        <ul role="list" class="startpage-card-listing" data-cardstore="startpage"></ul>
+        <!--css in quiz-app-card.css-->
+        <!--Ende form-input-->
       </main>
     </div>
 
@@ -250,17 +254,16 @@
       </h1>
 
       <main class="createpage__main app-grid__scrollarea">
-        <form class="createpage__form" action="">
-          <label for="createpage__inputfield--newquestion" class="create-label__textarea1"
-            >Add a new question
-          </label>
+        <form class="createpage__form" autocomplete="off" action="" data-form="createpage">
+          <label for="newquestion" class="create-label__textarea1"
+            >Add a new question here ⬇️</label
+          >
           <textarea
-            id="createpage__inputfield--newquestion"
-            name="createpage__input--newquestion"
+            id="createpage__newquestion"
+            name="newquestion"
             class="createpage__textarea createpage__textarea--1"
-            data-js="createpage__input--textarea1"
+            data-input="createpage__textarea1"
             placeholder="Please write your new quiz-question here"
-            autocomplete="off"
             maxlength="180"
             required
           ></textarea>
@@ -268,16 +271,13 @@
             >max 180 signs</output
           >
 
-          <label for="createpage__inputfield--newquestion__answer" class="create-label__textarea2"
-            >Add answer</label
-          >
+          <label for="newanswer" class="create-label__textarea2">Add an answer ⬇️</label>
           <textarea
-            id="createpage__inputfield--newquestion__answer"
-            name="createpage__input--newquestion-answer"
+            id="createpage__newanswer"
+            name="newanswer"
             class="createpage__textarea createpage__textarea--2"
-            data-js="createpage__input--textarea2"
+            data-input="createpage__textarea2"
             placeholder="Please write the answer according to your new quiz-question"
-            autocomplete="off"
             maxlength="300"
             required
           ></textarea>
@@ -285,23 +285,23 @@
             >max 300 signs</output
           >
 
-          <label for="createpage__inputfield--newquestion__tags" class="create-label__input1"
-            >Add tags, divided by comma</label
+          <label for="newtags" class="create-label__input1"
+            >Add 1 - 4 hints as tags, divided by comma ⬇️</label
           >
           <input
             type="text"
-            id="createpage__inputfield--newquestion__tags"
-            autocomplete="off"
+            name="newtags"
+            id="createpage__newtags"
             required
             class="createpage__input"
             data-input="tagsforcard"
           />
-          <!--reminder:change back type = "submit" when needed-->
+
           <button
             class="createpage__button--submit shadow--bottom log__button"
-            type="button"
             aria-label="submit-button to confirm your new quiz-question"
             data-submit="createpage"
+            type="button"
           >
             Submit
           </button>
