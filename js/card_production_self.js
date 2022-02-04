@@ -1,6 +1,7 @@
-export function tagTest() {
+function tagTest() {
   const createPageSubmitButton = document.querySelector('[data-submit="createpage"]');
   createPageSubmitButton.addEventListener('click', () => {
+    //event.preventDefault();
     console.log('first step');
     tagProduction();
   });

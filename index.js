@@ -14,9 +14,9 @@ console.log(userName);
 
 // buttonAnswer();
 
-import Counter from './js/create.js';
+//import Counter from './js/create.js';
 
-Counter();
+// Counter();
 
 import Card from './js/Card.js';
 
@@ -25,6 +25,9 @@ allCardElements.forEach(cardElement => {
   Card(cardElement);
 });
 
-import { tagTest } from './js/card_production_self.js';
+//import { tagTest } from './js/card_production_self.js';
 
-tagTest();
+//tagTest();
+
+import { cardProductionComplete } from './js/card_production_infinity.js';
+cardProductionComplete();
