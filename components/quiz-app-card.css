@@ -31,7 +31,7 @@
   font-size: 1rem;
   margin: 0;
   padding: 0.3rem;
-  background-color: var(--darkpetrol);
+  background-color: var(--petrolgrey);
   color: var(--white);
   grid-row: 1 / 2;
   grid-column: 1 / 2;
@@ -74,7 +74,7 @@ check, ob notwending*/
 }
 
 .app-card-action--on {
-  background-color: var(--darkpetrol);
+  background-color: var(--petrolgrey);
   color: var(--white);
 }
 
@@ -87,7 +87,7 @@ check, ob notwending*/
   align-items: center;
 }
 .quiz-app-card-advise-tag {
-  background-color: var(--darkpetrol);
+  background-color: var(--petrolgrey);
   color: var(--white);
   padding: 0.5rem;
 }

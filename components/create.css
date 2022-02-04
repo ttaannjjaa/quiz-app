@@ -4,7 +4,7 @@
   margin: 10px;
   flex-wrap: wrap;
   padding: 1rem;
-  border: 1px dotted var(--darkpetrol);
+  border: 1px dotted var(--petrolgrey);
   border-radius: 10px;
   position: relative;
 }

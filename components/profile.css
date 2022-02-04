@@ -19,7 +19,7 @@
   width: 150px;
   height: 150px;
   border-radius: 100px;
-  border: 0.5rem solid var(--darkpetrol);
+  border: 0.5rem solid var(--petrolgrey);
   margin: 1rem 1rem 1rem 0;
 }
 
@@ -51,7 +51,7 @@
 .profile__output__username {
   font-family: fantasy; /*utility.css*/
   flex-shrink: 1;
-  border: 1px dotted var(--darkpetrol);
+  border: 1px dotted var(--petrolgrey);
   padding: 5px;
 }
 
@@ -81,7 +81,7 @@
 
 .profile__skill--empty {
   padding: 0.2rem;
-  border: 1px solid var(--darkpetrol);
+  border: 1px solid var(--petrolgrey);
   border-radius: 20px;
   margin: 0 0.5rem 0.5rem 0;
 }
