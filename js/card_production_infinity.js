@@ -26,18 +26,19 @@ export function cardProductionComplete() {
     const newCard = {
       question: questionInput.value,
       answer: answerInput.value,
+      isBookmarked: false,
       tags: tagsInput.value
         .split(',')
         .map(tag => tag.trim())
         .filter(tag => tag.length)
         .slice(0, 4),
-    };
+    }; //Ende Verarbeitung des Inputs aus dem Formular
 
-    cards = [newCard, ...cards]; //Karte wird als erste vor allen vorhandenen Karten hinzugefügt
+    cards = [newCard, ...cards]; //Karte wird als erste vor allen vorhandenen Karten hinzugefügt - array Kartensammlung
     renderCards(); //eigene Funktion zur Kartenanzeige, die HTML und CSS enthält
 
-    formCreatePage.reset();
-    questionInput.focus();
+    formCreatePage.reset(); //Formular leeren
+    questionInput.focus(); //Formular für neue Eingabe refreshen
   }); // Ende Eventlistener
 
   function renderCards() {
@@ -49,16 +50,18 @@ export function cardProductionComplete() {
       cardElement.className = 'app-card';
       cardElement.innerHTML = `
       <section app-card data-js="app-card">
-      <button data-js="bookmark-toggle" class="app-card__bookmark shadow">
+      <button data-js="bookmark-toggle" class="app-card__bookmark${
+        card.isBookmarked ? ' app-card__bookmark--activated' : ''
+      } shadow aria-label="Bookmark" aria-pressed="${card.isBookmarked ? 'true' : 'false'}">
         <img src="../images/icons8-bookmark.svg" alt="bookmark icon" width="30" height="30" />
       </button>
       <h2 class="app-card__heading">Question:</h2>
       <article class="app-card-question-container">
         <p class="app-card-question">${card.question}
         </p>
-        <details class="app-card-action">
+        <details class="app-card-action" data-js="answer">${card.answer}>
           <summary class="app-card-action--off shadow--bottom" data-js="showanswer-button">
-            show answer
+            Toggle answer button
           </summary>${card.answer}
         </details>
       </article>
@@ -82,6 +85,13 @@ export function cardProductionComplete() {
     </ul>
   `;
       cardsContainer.append(cardElement);
+
+      const bookmarkElement = cardElement.querySelector('[data-js=bookmark-toggle]');
+      bookmarkElement.addEventListener('click', () => {
+        card.isBookmarked = !card.isBookmarked;
+        bookmarkElement.classList.toggle('app-card__bookmark--activated');
+        bookmarkElement.setAttribute('aria-pressed', card.isBookmarked);
+      });
     });
   }
 }

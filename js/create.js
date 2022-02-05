@@ -1,4 +1,4 @@
-export default function Counter() {
+export function counter() {
   const inputTextfieldQuestion = document.querySelector('[data-input="createpage__textarea1"]');
   let outputCounterQuestion = document.querySelector('[data-js="output-counter1"]');
 

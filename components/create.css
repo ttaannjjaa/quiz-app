@@ -1,10 +1,10 @@
 .createpage__form {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 30px 10px 10px;
   flex-wrap: wrap;
   padding: 1rem;
-  border: 1px dotted var(--darkpetrol);
+  border: 1px dotted var(--petrolgrey);
   border-radius: 10px;
   position: relative;
 }
@@ -35,11 +35,11 @@
 }
 
 .createpage__textarea--1 {
-  height: 120px;
+  height: 108px;
 }
 
 .createpage__textarea--2 {
-  height: 220px;
+  height: 176px;
 }
 
 .createpage__input {
